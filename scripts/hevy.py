@@ -27,6 +27,8 @@ for workout in workouts:
         for s in exercise["sets"]:
             rows.append({
                 "date": workout["start_time"],
+                "start_time": workout["start_time"],  
+                "end_time": workout["end_time"],     
                 "workout": workout["title"],
                 "exercise": exercise["title"],
                 "weight_kg": s["weight_kg"],
@@ -35,6 +37,10 @@ for workout in workouts:
 
 df = pd.DataFrame(rows)
 
+# workout length in minutes = end time - start time
+df["duration_min"] = (
+    pd.to_datetime(df["end_time"]) - pd.to_datetime(df["start_time"])
+).dt.total_seconds() / 60
 
 print(df.head(10))
 
