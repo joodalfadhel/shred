@@ -1,2 +1,3 @@
 # shred
-analyzing my workout data to track progress &amp; find areas for improvment
+analyzing workout/health data to track progress & find areas for improvment
+
