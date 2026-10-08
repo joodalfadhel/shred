@@ -4,3 +4,5 @@ python-dotenv
 jupyter
 matplotlib
 plotly
+garminconnect
+curl_cffi
