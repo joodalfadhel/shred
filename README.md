@@ -16,6 +16,7 @@ analyzing workout/health data to track progress & find areas for improvement
 - [ ] combine analysis from different applications
 - [ ] have data being pulled in consistently
 - [ ] add interactive components
+
 - [ ] make it work for any user (personal settings like start date/timezones) + add setup/envexample
 
 
